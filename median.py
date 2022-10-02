@@ -11,11 +11,12 @@ while True:
         exit()
     else:
         n = len(numbers)
+        median = 0
         if n == 1:
-            print(numbers[0])
+            median = numbers[0]
         elif n % 2:
             median = numbers[n//2]
-            print(median)
         else:
             median = (numbers[n//2 - 1] + numbers[n//2]) / 2.0
-            print(median)
+        
+        print(median, flush=True)
