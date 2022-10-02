@@ -9,7 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         n = len(numbers)
-        if n % 2:
+        if n == 1:
+            print(numbers[0])
+        elif n % 2:
             median = numbers[n//2]
             print(median)
         else:
