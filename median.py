@@ -7,6 +7,8 @@ while True:
         numbers = sorted([float(value) for value in input().split(",")])
     except ValueError:
         print("Some input could not be converted to a number!")
+    except EOFError:
+        exit()
     else:
         n = len(numbers)
         if n == 1:
